@@ -1,133 +1,88 @@
-/* Full page height */
-html, body {
-    height: 100%;
-    margin: 0;
+
+/* ============================= */
+/* INTEREST PAGE RESPONSIVE MEDIA QUERIES */
+/* ============================= */
+
+/* Tablets / small laptops */
+@media (max-width: 1024px) {
+    .InterestHeader {
+        padding: 30px;
+        gap: 10px;
+    }
+    .fa-person-walking {
+        font-size: 2rem;
+    }
+    main {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+    .hobby-card {
+        width: 80%;
+        padding: 18px;
+    }
+    .hobby-card img {
+        width: 70%;
+        height: 220px;
+    }
 }
 
-/* Flex layout */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.fa-person-walking {
-    color: white;
-    font-size: 2.2rem;
-}
-
-/* Header */
-.InterestHeader {
-    background-image: url('images/interestBack.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    color: white;
-    text-align: center;
-    background-blend-mode: darken;
-    background-color: rgba(0,0,0,0.4);
-
-     /* ALIGN ICON + TEXT */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .InterestHeader {
+        flex-direction: column;
+        gap: 8px;
+        padding: 25px;
+    }
+    .fa-person-walking {
+        font-size: 1.8rem;
+    }
+    main {
+        padding: 0 10px;
+        margin: 15px auto;
+    }
+    .hobby-card {
+        width: 90%;
+        padding: 15px;
+    }
+    .hobby-card img {
+        width: 80%;
+        height: 200px;
+    }
 }
 
-/* Navigation */
-.InterestNav {
-    background-color:#DAA520;
-}
-
-/* Navigation list styling */
-nav ul {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-
-    display: flex;
-    justify-content: center;   
-    align-items: center;
-    gap: 25px;                 
-}
-
-/* Links */
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
-    padding: 8px 12px;
-    transition: 0.3s;
-}
-
-/* Hover and active */
-nav ul li a:hover,
-nav ul li a.active {
-    color: yellow;
-    text-decoration: none;
-}
-
-/* Main content */
-main {
-    flex: 1;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-/* Hobby container */
-.hobby-container {
-    display: flex;
-    flex-wrap: wrap; /* responsive */
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-/* Hobby cards */
-.hobby-card {
-    background-color: #f0f4ff;
-    width: 1000px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-}
-
-.hobby-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
-}
-
-/* Hobby images */
-.hobby-card img {
-    width: 50%;
-    height: 250px;
-    object-fit:initial;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-/* Card headings */
-.hobby-card h3 {
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-/* Card paragraph */
-.hobby-card p {
-    font-size: 0.95rem;
-    color: #333;
-}
-
-/* Footer */
-footer {
-    background-image: url('images/interestFooter.jpg');
-    color: white;
-    text-align: center;
-    padding: 15px;
-    background-repeat: no-repeat;
-    background-size:cover;
+/* Mobile phones */
+@media (max-width: 480px) {
+    .InterestHeader {
+        flex-direction: column;
+        padding: 20px;
+        gap: 6px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .fa-person-walking {
+        font-size: 1.5rem;
+    }
+    main {
+        padding: 0 5px;
+        margin: 10px auto;
+    }
+    .hobby-card {
+        width: 95%;
+        padding: 12px;
+    }
+    .hobby-card img {
+        width: 100%;
+        height: 180px;
+    }
+    .hobby-card h3 {
+        font-size: 1.1rem;
+    }
+    .hobby-card p {
+        font-size: 0.9rem;
+    }
 }

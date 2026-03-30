@@ -216,3 +216,86 @@ footer {
 .download-btn:hover {
     background: #e6b800;
 }
+
+/* ============================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ============================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+    .HomeHeader {
+        padding: 30px;
+    }
+    .fa-house {
+        font-size: 2rem;
+    }
+    main {
+        padding: 40px 15px;
+    }
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .name-text {
+        flex: unset;
+    }
+    .section-header img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .HomeHeader {
+        padding: 25px;
+        gap: 8px;
+    }
+    .fa-house {
+        font-size: 1.8rem;
+    }
+    main {
+        padding: 30px 10px;
+    }
+    .section-header img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .HomeHeader {
+        flex-direction: column;
+        padding: 20px;
+        gap: 6px;
+    }
+    .fa-house {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    main {
+        padding: 20px 5px;
+    }
+    .header-flex {
+        padding: 0 10px;
+    }
+    .section-header img {
+        width: 80px;
+        height: 80px;
+    }
+    nav ul {
+        padding: 5px;
+    }
+}

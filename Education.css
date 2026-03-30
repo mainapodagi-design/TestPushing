@@ -120,3 +120,76 @@ footer {
     text-align: center;
     padding: 10px;
 }
+/* ============================= */
+/* EDUCATION PAGE RESPONSIVE MEDIA QUERIES */
+/* ============================= */
+
+/* Tablets / small laptops */
+@media (max-width: 1024px) {
+    .Edu_header {
+        padding: 30px;
+        gap: 10px;
+    }
+    .fa-book-open {
+        font-size: 2rem;
+    }
+    main {
+        padding: 15px;
+    }
+    table {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .Edu_header {
+        flex-direction: column;
+        gap: 8px;
+        padding: 25px;
+    }
+    .fa-book-open {
+        font-size: 1.8rem;
+    }
+    table {
+        width: 95%;
+        margin: 20px auto;
+    }
+    th, td {
+        padding: 10px 8px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .Edu_header {
+        flex-direction: column;
+        padding: 20px;
+        gap: 6px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .fa-book-open {
+        font-size: 1.5rem;
+    }
+    table {
+        width: 100%;
+        margin: 15px auto;
+    }
+    th, td {
+        padding: 8px 5px;
+        font-size: 0.9rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    main {
+        padding: 10px;
+    }
+}
