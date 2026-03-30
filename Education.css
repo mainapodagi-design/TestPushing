@@ -25,7 +25,7 @@ body {
 
 /* Header */
 .Edu_header {
-    background-image: url('education.jpg');
+    background-image: url('images/education.jpg');
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -113,7 +113,7 @@ h2 {
 
 /* Footer */
 footer {
-    background-image: url('moon.jpg');
+    background-image: url('images/moon.jpg');
     background-size: cover;
     background-position: center;
     color: white;

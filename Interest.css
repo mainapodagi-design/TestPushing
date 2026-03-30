@@ -18,7 +18,7 @@ body {
 
 /* Header */
 .InterestHeader {
-    background-image: url('interestBack.jpg');
+    background-image: url('images/interestBack.jpg');
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -124,7 +124,7 @@ main {
 
 /* Footer */
 footer {
-    background-image: url('interestFooter.jpg');
+    background-image: url('images/interestFooter.jpg');
     color: white;
     text-align: center;
     padding: 15px;

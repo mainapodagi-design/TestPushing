@@ -26,7 +26,7 @@ body {
 
 /* Header */
 .HomeHeader {
-    background-image: url('m1.jpg');
+    background-image: url('images/m1.jpg');
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -156,7 +156,7 @@ p {
 
 /* Footer */
 footer {
-    background-image: url('m2.jpg');
+    background-image: url('images/m2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -22,7 +22,7 @@ body {
 
 /* Header */
 header {
-    background-image: url('contact.jpg');
+    background-image: url('images/contact.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ h3 {
 
 /* Footer */
 footer {
-    background-image: url('footerContact.jpg');
+    background-image: url('images/footerContact.jpg');
     color: white;
     text-align: center;
     padding: 10px;
