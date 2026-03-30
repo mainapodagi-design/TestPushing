@@ -21,7 +21,7 @@ body {
 
 /* Header */
 header {
-    background-image: url('23.jpg');
+    background-image: url('images/23.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -98,7 +98,7 @@ main {
 
 /* Footer */
 footer {
-    background-image: url('foot.jpg');
+    background-image: url('images/foot.jpg');
     color: white;
     text-align: center;
     padding: 15px;
