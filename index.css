@@ -1,0 +1,53 @@
+/* Add this */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Keep your flex layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* No change */
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+/* No change */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* This pushes footer down */
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Footer stays at bottom */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

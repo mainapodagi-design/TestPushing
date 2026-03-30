@@ -1,0 +1,122 @@
+/* Full height fix */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Remove default h1 spacing */
+h1 {
+    margin: 0;
+}
+
+/* FIX Font Awesome icon */
+.fa-book-open {
+    color: white;
+    font-size: 2.2rem;
+}
+
+/* Flex layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.Edu_header {
+    background-image: url('education.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white;
+
+    /* ALIGN ICON + TEXT */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Navigation bar */
+.nav {
+    background-color: #00A36C;
+}
+
+/* MODERN FLEX NAV */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+nav ul li a.active {
+    color: yellow;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Section heading */
+h2 {
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-image: url('moon.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

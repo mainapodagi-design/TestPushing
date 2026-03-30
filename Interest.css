@@ -1,0 +1,133 @@
+/* Full page height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Flex layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.fa-person-walking {
+    color: white;
+    font-size: 2.2rem;
+}
+
+/* Header */
+.InterestHeader {
+    background-image: url('interestBack.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.4);
+
+     /* ALIGN ICON + TEXT */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Navigation */
+.InterestNav {
+    background-color:#DAA520;
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    gap: 25px;                 
+}
+
+/* Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+/* Hover and active */
+nav ul li a:hover,
+nav ul li a.active {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Hobby container */
+.hobby-container {
+    display: flex;
+    flex-wrap: wrap; /* responsive */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Hobby cards */
+.hobby-card {
+    background-color: #f0f4ff;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Hobby images */
+.hobby-card img {
+    width: 50%;
+    height: 250px;
+    object-fit:initial;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Card headings */
+.hobby-card h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Card paragraph */
+.hobby-card p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-image: url('interestFooter.jpg');
+    color: white;
+    text-align: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}

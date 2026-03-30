@@ -1,0 +1,164 @@
+/* Full page setup */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.fa-address-book {
+    color: white;
+    font-size: 2.2rem;
+}
+/* Flex layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-image: url('contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px;
+
+     /* ALIGN ICON + TEXT */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Navigation */
+nav {
+    background-color: #D22B2B;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Nav links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: yellow;
+}
+.active{
+    color: yellow;
+}
+
+/* Main container */
+.container {
+    flex: 1;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels above inputs */
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Inputs and textarea */
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Focus effect */
+form input:focus,
+form textarea:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+/* Checkbox label */
+.checkbox-label {
+    font-weight: normal;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+/* Submit button */
+form button {
+    padding: 12px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Social section */
+h3 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+
+/* Social links */
+.container a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-image: url('footerContact.jpg');
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

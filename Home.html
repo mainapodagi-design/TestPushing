@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website | Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+<header class="HomeHeader">
+    <i class="fa-regular fa-house"></i>
+    <h1>Home</h1>
+</header>
+<nav class="HomeNav">
+    <ul>
+        <li><a href="Home.html" class="active">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Sample_Work.html">Sample Work</a></li>
+        <li><a href="Interest.html">Interests</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!--<p>Welcome to my homepage.</p>-->
+    <section class="home-section">
+        <header class="section-header">
+            <div class="header-flex">
+                <!-- Profile Image -->
+                <img src="Leah.png" alt="My Profile Picture" class="right-logo profile-img" id="profileImage">
+                
+                <div class="name-text">
+                    <h2>
+                        Leah Simat (30)<br>
+                        Bachelor of Communication Arts Year 2 (2026)<br> 
+                        Divine Word University
+                    </h2>
+                </div>
+            </div>
+        </header>
+    </section>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Autem fuga eius repudiandae aliquid sequi id beatae facere ea deserunt, quod, 
+        suscipit eum quam quia velit recusandae repellendus, est aspernatur perferendis?
+    </p>
+</main>
+
+<footer>&copy;2026 Leah Simat. All rights reserved</footer>
+
+<!-- Modal Structure -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a id="downloadBtn" href="#" download="Leah.png" class="download-btn">Download</a>
+</div>
+
+<!-- Modal JavaScript -->
+<script>
+const modal = document.getElementById("imageModal");
+const img = document.getElementById("profileImage");
+const modalImg = document.getElementById("modalImage");
+const downloadBtn = document.getElementById("downloadBtn");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+// Open modal and set image src
+img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    downloadBtn.href = this.src;
+}
+
+// Close modal when clicking the X
+closeBtn.onclick = function() { 
+    modal.style.display = "none";
+}
+
+// Close modal when clicking outside the image
+modal.onclick = function(event) {
+    if(event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
