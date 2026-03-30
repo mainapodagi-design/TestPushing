@@ -3,13 +3,14 @@ html, body {
     height: 100%;
     margin: 0;
 }
+
 /* FIX Font Awesome icon */
 .fa-briefcase {
     color: white;
     font-size: 2.2rem;
 }
 
-
+/* Body layout */
 body {
     display: flex;
     flex-direction: column;
@@ -29,7 +30,7 @@ header {
     padding: 40px;
     text-align: center;
 
-     /* ALIGN ICON + TEXT */
+    /* ALIGN ICON + TEXT */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,37 +40,39 @@ header {
 /* Navigation */
 nav {
     background-color: #89CFF0;
-    text-decoration: solid;
 }
 
-/* Fix list spacing */
+/* Navigation list */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* center vertically */
     text-align: center;
+    gap: 15px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
+/* Navigation links */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 6px 10px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
     color: yellow;    
 }
+
 nav ul li a.active {
     color: yellow;
-    
 }
 
-/* MAIN CONTENT (important fix) */
+/* MAIN CONTENT */
 main {
     flex: 1;
     padding: 20px;
@@ -103,6 +106,7 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
 /* ============================= */
 /* SAMPLE WORK PAGE RESPONSIVE MEDIA QUERIES */
 /* ============================= */
@@ -127,7 +131,8 @@ footer {
 /* Small tablets / large phones */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: column;   /* stack vertically */
+        align-items: center;      /* center links horizontally */
         gap: 12px;
     }
     header {
@@ -148,6 +153,12 @@ footer {
 
 /* Mobile phones */
 @media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;    /* center links */
+        gap: 10px;
+        text-align: center;     /* center text inside links */
+    }
     header {
         flex-direction: column;
         padding: 20px;
