@@ -102,9 +102,23 @@ main {
 }
 
 /* Hobby images */
-.hobby-card img {
+.hobby-card img.photo-image {
     width: 50%;
-    height: 250px;
+    height: 550px;
+    object-fit:initial;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.hobby-card img.reading-image {
+    width: 50%;
+    height: 350px;
+    object-fit:initial;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.hobby-card img.travel-image {
+    width: 50%;
+    height: 550px;
     object-fit:initial;
     border-radius: 8px;
     margin-bottom: 15px;
